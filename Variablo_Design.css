@@ -1,0 +1,33 @@
+<style>
+h3
+{
+	color: #3FA239;
+	margin: 0;
+}
+
+p
+{
+	margin: 18.6px 0 0 0;
+}
+
+fieldset
+{
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 15px;
+}
+
+legend
+{
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+#cutoff
+{
+	margin:auto; 
+	max-width: 75%;
+}
+
+</style>		
