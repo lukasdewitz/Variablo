@@ -1,19 +1,61 @@
-<style>
+body
+{
+	background-color: #FCFBF1;
+	font-family: Arial; 
+}
+
+h1
+{
+	text-align: center; 
+	font-size: 12pt; 
+	font-family: Arial;
+	border: 1px;
+	border-color: none;
+	border-radius: 3px; 
+	padding: 3px; 
+	letter-spacing: 1px; 
+	width: auto;
+	background-color: #FCFBF1;
+}
+
 h3
 {
 	color: #3FA239;
 	margin: 0;
 }
 
-p
+h4
 {
-	margin: 18.6px 0 0 0;
+	font-weight: bold;
+}
+
+.kopfzeile_button
+{
+	font-family: Arial;
+	float: left;
+	color: #800000;
+	width: auto;
+	max-width: 21%;
+	min-width: 15%;
+	float: left;
+	margin:auto;
+	position: auto;
+	padding-left: 20px;
+}
+
+.headline 
+{
+	font-family: Arial;
+	background-color: #C8E9BF;
+	height: 100px;
+	width: 100%;
+	top: 10px;
 }
 
 fieldset
 {
 	border: 2px solid black;
-	border-radius: 8px;
+	border-radius: 3px;
 	padding: 15px;
 }
 
@@ -24,10 +66,32 @@ legend
 	padding: 5px;
 }
 
+a:hover
+{
+	color: #659557;	
+}
+
+a
+{
+	color: #192B14;
+	text-decoration: none;
+}
+
 #cutoff
 {
 	margin:auto; 
 	max-width: 75%;
 }
-
-</style>		
+	
+#variablo_kopfzeile
+{
+	float: left;
+	color: #800000;
+	width: auto;
+	max-width: 21%;
+	min-width: 15%;
+	float: left;
+	margin:auto;
+	position: auto;
+	padding-left: 20px;
+}	
