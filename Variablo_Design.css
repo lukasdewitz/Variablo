@@ -17,7 +17,14 @@ h1
 	width: auto;
 	background-color: #FCFBF1;
 }
-
+h2
+{
+	text-align: center;
+	font-size: 18px;
+	font-family: Arial;
+	font-weight: bold; 
+	margin-left: 50px;
+}
 h3
 {
 	color: #3FA239;
@@ -26,7 +33,11 @@ h3
 
 h4
 {
-	font-weight: bold;
+	text-align: justify;
+	font-size: 14px;
+	font-family: Arial;
+	font-weight: 200; 
+	margin: 30px;
 }
 
 .kopfzeile_button
@@ -42,7 +53,30 @@ h4
 	position: auto;
 	padding-left: 20px;
 }
-
+.flexbox
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: center;
+	margin: 10px;
+	font-size: 14px;
+	font-family: Arial;
+}
+.container-1
+{
+	background-color: #E9F3D4;
+}
+.container
+{	
+	display: flex;
+	align-content: space-between;
+	justify-content: center;
+	align-items: center;
+	margin: 100px;
+}
 .headline 
 {
 	font-family: Arial;
