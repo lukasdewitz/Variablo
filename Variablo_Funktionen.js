@@ -27,3 +27,58 @@ function loadCookies()
 	document.getElementById("user").value = myCookies["_user"];
 	document.getElementById("age").value = myCookies["_uage"];
 }
+
+
+
+
+var mathContent = ['Pythagoras', 'kleine Lösungsformel'];
+
+var physicsContent = ['Ohm´sches Gesetz', 'Leitwertstoffe'];
+
+var chemistryContent = ['Stoffmenge'];
+
+
+function search()
+{ 
+   var searchString = document.getElementById('searchString').value; // Suchwort auslesen 
+   var match = false;
+
+	for(var i = 0; i < mathContent.length; i++)
+	{
+		if(mathContent[i] == searchString)
+		match = true;
+	}
+	if(match)
+	{
+		window.location.assign("Mathe.html#"+searchString);
+	}
+	else
+	{
+		for(var i = 0; i < physicsContent.length; i++)
+		{
+			if(physicsContent[i] == searchString)
+				match = true;
+		}
+		if(match)
+		{
+			window.location.assign("Physik.html#"+searchString);
+		}
+		else
+		{
+			for(var i = 0; i < chemistryContent.length; i++)
+			{
+				if(chemistryContent[i] == searchString)
+					match = true;
+			}
+			if(match)
+				window.location.assign("Chemie.html#"+searchString);
+			else
+				alert("Keine Inhalte gefunden.");
+		}
+	}
+}
+
+
+
+
+
