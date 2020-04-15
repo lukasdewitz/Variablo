@@ -129,3 +129,33 @@ a
 	position: auto;
 	padding-left: 20px;
 }	
+
+#searchString
+{
+	font-family: Arial;
+	float: left;
+	color: #800000;
+	width: auto;
+	max-width: 50%;
+	min-width: 15%;
+	float: left;
+	margin:auto;
+	position: auto;
+	padding-left: 20px;
+	margin-top: 5%;
+}
+
+#suchlink
+{
+	font-family: Arial;
+	float: left;
+	/*color: #800000;*/
+	width: auto;
+	max-width: 21%;
+	min-width: 15%;
+	float: left;
+	margin:auto;
+	position: auto;
+	padding-left: 20px;
+	margin-top: 5%;
+}
