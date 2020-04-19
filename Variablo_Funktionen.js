@@ -50,7 +50,7 @@ function search()
 	}
 	if(match)
 	{
-		window.location.assign("Mathe.html#"+searchString);
+		window.location.assign("Mathematik.html#"+searchString);
 	}
 	else
 	{
@@ -62,6 +62,7 @@ function search()
 		if(match)
 		{
 			window.location.assign("Physik.html#"+searchString);
+			//alert("ji");
 		}
 		else
 		{
