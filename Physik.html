@@ -17,80 +17,27 @@
 		<span style ="color: black;">GRUNDLAGEN TECHNISCHE INFORMATIK</span>
 	</h1>
 
+	<input type="text" name="stichwort" list="stichwort" id="searchString"> 
+		<datalist id = "stichwort">
+			<option value = "Leitwertstoffe"/>
+			<option value = "Ohm´sches Gesetz"/>
+			<option value = "Pythagoras"/>
+		</datalist>
+	</input>
+   	<a id="suchlink" href="javascript: search1();">Seite durchsuchen</a> 
+
+
 	<br> 
-	<fieldset><legend><h3>Griechische Zeichen in derElektrotechnik</h3></legend>
-		Elektrischer Widerstand-Ohm: &ohm; <br><br>
-		Omega für 	  Kreisfrequenz: &omega; = 2&pi;f
-		<p>
-			R<sub>ges</sub> = R<sub>1</sub> + R<sub>2</sub>
-		</p>
-	</fieldset>	
-		<br>
-    
-	<fieldset><legend><h3>Mathematische Symbole</h3></legend>
-		Summe: &sum;<br>
-		Logik: &not(a  &or; b) &and; &not;c
-	</fieldset>	
-		<br>
+	<br>
 	
-	<fieldset><legend><h3 id="Ohm´sches Gesetz">Ohm'sches Gesetz>Ohm'sches Gesetz</h3></legend
+	<fieldset><legend><h3>Ohm'sches Gesetz</h3></legend
 		U = R &times; I <br>
 		Spannung = Widerstand &times; Strom
 	</fieldset>	
 		<br>
 	
-    <fieldset><legend><h3>Einheiten und Größen</h3></legend>
-		<img src="https://i.postimg.cc/V62qB67G/Unbenannt.png"style="width:300px;height:300px;"> &emsp;&emsp;&emsp;&emsp;
-		<img src="https://i.postimg.cc/vTDKDc40/Gr-en.png"style="width:400px;height:300px;">
-	</fieldset>
-		<br><br>
-		
-	<fieldset><legend><h3>Reihenschaltung und Parallelschaltung</h3></legend>
-		Bei der Reihenschaltung fließt der gleiche Strom durch alle Widerstände, bei der Parallelschaltung teilt sich der Strom auf.<br><br>
-		Bei einer Parallelschaltung liegt über jeden Widerstand die gleiche Spannung an, bei der Reihenschaltung meist nicht.
-		<p>
-		<h4 style="font-weight: bold">Reihenschaltung</h4>
-		Bei der Reihenschaltung ist der Strom überall gleich groß <mark style= "background-color: yellow; font-weight:bold;">I1 = I2 = I3 = I</mark><br>
-		Die Spannung teilt sich auf <mark style= "background-color: yellow; font-weight:bold;">U = U1 + U2 + U3</mark><br>
-		Die Spannungsaufteilung ist proportional zum Widerstand der Bauteile. <br><br>
-		Die Widerstände bzw. der Gesamtwiderstand ist sehr einfach zu berechnen, man alle Widerstände: <br>
-		R<sub>ges</sub> = R1 + R2 + R3 + ... <br><br>
-		Die Anzahl der seriell geschalteten Widerstände spielt keine Rolle, der Gesamtwiderstand addiert sich aus allen Widerständen. <br>
-		</p>
-			
-		<p>
-		<h4 style="font-weight: bold">Parallelschaltung</h4>
-		Bei der Parallelschaltung teilt sich der Strom auf <mark style= "background-color: yellow; font-weight:bold;">I = I1 + I2 + I3</mark><br>
-		Die Spannung ist überall gleich groß, <mark style= "background-color: yellow; font-weight:bold;">U1 = U2 = U3 = U</mark><br>
-		Die Stromaufteilung erfolgt umgekehrt proportional zum Widerstand der elektronischen Bauteile.<br><br>
-		Vorteile einer Parallelschaltung:<br>
-		An allen Bauteilen einer Parallelschaltung ist die Spannung vorhanden.<br>
-		Durch Parallelschalten mehrerer elektrischer Verbraucher kann man daher die Gesamtleistung einer Schaltung erhöhen.<br><br>
-		In der Parallelschaltung können einzelne Bauteile hinzugefügt oder entfernt werden, ohne dass die Funktion der anderen Bauteile ausfallen.<br>
-			
-		<br>	
-		<img src="https://i.postimg.cc/L5NZQ8vF/bild1neu.jpg"style="width180px;height:180px;">
-	</fieldset>
-		<br><br> 
 		
 	
-	<fieldset><legend><h3>Spezifischer Widerstand und Leitwert</h3></legend>
-		Der spezifische Widerstand - manchmal auf spezifischer elektrischer Widerstand genannt - ist eine temperaturabhängige Materialkonstante mit dem Formelzeichen &rho; (Rho). <br><br>
-		Er gibt an, welchen Widerstand ein elektrischer Leiter aus einem Stoff besitzt, der 1 m lang ist und dabei eine durchgehende Querschnittsfläche von 1 mm2 aufweist. <br><br>
-		Sofern die Temperatur eines Leiters gleich bleibt, kann folgender Zusammenhang als Formel beschrieben werden:
-			
-		<p><img src="https://i.postimg.cc/FsYjCjtP/Unbenannt.png" style="width90px;height:90px;"></p>
-
-		<p>Dabei ist:</p><br>
-		<li>"R" der Widerstand des Leiters in Ohm, zum Beispiel 0,2 Ω</li><br>
-		<li>"&rho;" der spezifische elektrische Widerstand in Ohm <br>
-			&emsp;&nbsp; mal Millimeter Quadrat durch Meter, zum Beispiel 0,1 Ω · mm2:
-			&nbsp &nbsp &nbsp &nbsp;m</li><br>
-		<li>"l" die Länge des Leiters in Meter, zum Beispiel 2 m</li><br>
-		<li>"A" die Querschnittsfläche in Quadratmillimeter, zum Beispiel 1 mm2</li>
-			
-	</fieldset>
-	<br><br>
 	
 	<fieldset><legend><h3 id="Leitwertstoffe">Leitwertstoffe</h3></legend>
 		<table border="1" style="border-collapse: collapse">
@@ -146,11 +93,36 @@
 				<td>Kohle</td>
 				<td align="right">40,0000 * 10 <sup>6</sup></td>
 			</tr>
+		</table>
+	</fieldset>
+	<br>
 
-				
-			
+		<fieldset><legend><h3>Testformel</h3></legend>
+		<math xmlns = "http://www.w3.org/1998/Math/MathML">
+		   <mrow>
+		      <mrow>
+		         <msup> <mi>x</mi> <mn>2</mn> </msup> <mo>+</mo>
+		         <mrow>
+		            <mn>4</mn>
+		            <mo>⁢</mo>
+		            <mi>x</mi>
+		         </mrow>
+		         <mo>+</mo>
+		         <mn>4</mn>
+		      </mrow>
+		      
+		      <mo>=</mo>
+		      <mn>0</mn>
+		   </mrow>
+		</math>	
+		</fieldset>
 				
 				
 </div>
+	
 </body>	
+
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 </html>
