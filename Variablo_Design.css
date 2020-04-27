@@ -18,16 +18,15 @@ h1
 }
 h2
 {
-	text-align: center;
+	text-align: left;
 	font-size: 18px;
 	font-family: Arial;
 	font-weight: bold; 
-	margin-left: 50px;
-	margin-top: 50px;
+
 }
 h3
 {
-	text-align: center-left;
+	text-align: center;
 	font-size: 12pt;
 	color: #3FA239;
 	margin: 0;
@@ -65,17 +64,19 @@ h4
 	font-size: 14px;
 	font-family: Arial;
 }
-.container
+.containerhello
 {	
 	display: flex;
 	align-content: space-between;
 	justify-content: left;
 	align-items: left;
 	margin: 100px;
+	
 }
-.container-1
+.containerhello-1
 {
-	background-color: #C8E9BF;
+	background-color: #F9F7E2;
+	
 }
 .containervz
 {
@@ -84,20 +85,19 @@ h4
 	align-content: space-between;
 	justify-content: flex-start;
 	align-items: left;
-	margin: 100px;
+	margin: auto;
 }
 .containervz-1
 {
 	background-color: #E9F3D4;
 }
-.containerformel
+.containerforme1
 {
 	display: flex;
 	flex-direction: column;
 	align-content: space-between;
-	justify-content: flex-start;
-	align-items: left;
-	margin: 100px;
+	justify-content: center;
+	align-items: center;
 }
 .containerformel-1
 {
