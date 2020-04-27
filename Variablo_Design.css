@@ -3,7 +3,6 @@ body
 	background-color: #FCFBF1;
 	font-family: Arial; 
 }
-
 h1
 {
 	text-align: center; 
@@ -24,13 +23,13 @@ h2
 	font-family: Arial;
 	font-weight: bold; 
 	margin-left: 50px;
+	margin-top: 50px;
 }
 h3
 {
 	color: #3FA239;
 	margin: 0;
 }
-
 h4
 {
 	text-align: justify;
@@ -39,7 +38,6 @@ h4
 	font-weight: 200; 
 	margin: 30px;
 }
-
 .kopfzeile_button
 {
 	font-family: Arial;
@@ -85,6 +83,37 @@ h4
 	width: 100%;
 	top: 10px;
 }
+.dropdown
+{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content
+{
+	display: none;
+	position: absolute;
+	background-color: #800000;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+.dropbtn 
+{
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content a 
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
 fieldset
 {
@@ -92,31 +121,26 @@ fieldset
 	border-radius: 3px;
 	padding: 15px;
 }
-
 legend
 {
 	border: 2px solid black;
 	border-radius: 8px;
 	padding: 5px;
 }
-
 a:hover
 {
 	color: #659557;	
 }
-
 a
 {
 	color: #192B14;
 	text-decoration: none;
 }
-
 #cutoff
 {
 	margin:auto; 
 	max-width: 75%;
 }
-	
 #variablo_kopfzeile
 {
 	float: left;
@@ -125,11 +149,10 @@ a
 	max-width: 21%;
 	min-width: 15%;
 	float: left;
-	margin:auto;
+	margin: auto;
 	position: auto;
 	padding-left: 20px;
 }	
-
 #searchString
 {
 	font-family: Arial;
@@ -144,7 +167,6 @@ a
 	padding-left: 20px;
 	margin-top: 5%;
 }
-
 #suchlink
 {
 	font-family: Arial;
@@ -152,7 +174,6 @@ a
 	width: auto;
 	max-width: 21%;
 	min-width: 15%;
-	float: left;
 	margin:auto;
 	position: auto;
 	padding-left: 20px;
