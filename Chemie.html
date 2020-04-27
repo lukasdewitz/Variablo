@@ -7,8 +7,10 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="Variablo_Design.css">
 	<script language="javascript" type="text/javascript" src="Variablo_Funktionen.js"></script>
+	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
 	
-	<title>Startseite</title>
+	<title>Chemie</title>
 </head>
 
 <body>
@@ -20,28 +22,28 @@
 
 		<div class = "dropdown">
 			<div class="kopfzeile_button" style="left: 25%">
-				<a href= "Startseite.html">
+				<a href= "Chemie.html">
 					<h1>
 						<span>Chemie</span>
 					</h1>
 				</a>
 		</div>
 			<div class="kopfzeile_button" style="left: 40%">
-			<a href= "Startseite.html">
+			<a href= "Mathematik.html">
 				<h1>
 					<span>Mathematik</span>
 				</h1>
 			</a>
 		</div>
 		<div class="kopfzeile_button" style="left: 50%">
-			<a href= "Startseite.html">
+			<a href= "Physik.html">
 				<h1>
 					<span>Physik</span>
 				</h1>
 			</a>
 		</div>
 		<div class="kopfzeile_button" style="left: 60%">
-			<a href= "Startseite.html">
+			<a href= "IndividuelleFormelsammlung.html">
 				<h1>
 					<span>Individuelle Formelsammlung</span>
 				</h1>
@@ -50,17 +52,24 @@
 		<div class="kopfzeile_button" style="left: 70%">
 			<input type="text" name="stichwort" list="stichwort" id="searchString"> 
 				<datalist id = "stichwort">
-					<option value = "Leitwertstoffe"/>
 					<option value = "Ohm´sches Gesetz"/>
-					<option value = "Pythagoras"/>
+					<option value = "Satz von Pythagoras"/>
+					<option value = "Dreieck"/>
+					<option value = "Fläche Dreieck"/>
+					<option value = "Kreis"/>
+					<option value = "Fläche Kreis"/>
+					<option value = "Umfang Kreis"/>
 				</datalist>
 			</input>
 			<a id="suchlink" href="javascript: search();">Suchen</a> 
 		</div>
 	</div>
-			<br> <br> <br> <br>
+			<br> <br>
+				<h2>Chemie</h2>
+			<br> <br>
 
-		<fieldset><legend><h3>Testformel</h3></legend>
+	<div id="containerformel">
+		<h3>Testformel</h3>
 		<math xmlns = "http://www.w3.org/1998/Math/MathML">
 		   <mrow>
 		      <mrow>
@@ -78,14 +87,9 @@
 		      <mn>0</mn>
 		   </mrow>
 		</math>	
-		</fieldset>
-				
-				
-</div>
+	</div>	
+			
 	
 </body>	
-
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
 </html>
