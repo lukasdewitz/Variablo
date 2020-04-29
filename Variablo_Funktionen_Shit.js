@@ -1,7 +1,10 @@
-//var myCookies ={};
+var myCookies ={};
 //var myCookies["_user"] = document.getElementById("user").value;
 //var myCookies["_uage"] = document.getElementById("age").value.toString();
 var date = new Date(Date.now()+60*1000).toString();
+var leer = true;
+document.cookie = "";
+
 
 function saveCookies()
 {
@@ -16,7 +19,42 @@ function saveCookies()
 		document.cookie = cookieString;
 	}
 	document.getElementById("out").innerHTML = document.cookie;
+	
 }
+
+function saveCookiesNoDelete()
+{
+	if (leer)
+	{
+	myCookies["_user"] = document.getElementById("user").value;
+	myCookies["_uage"] = document.getElementById("age").value.toString();
+	//document.cookie =""; //Leert den Cookie
+	var expiresAttrib = date; //saved für 60000Sekunden
+	var cookieString = "";
+	for(var key in myCookies)
+	{
+		cookieString = key+"="+myCookies[key]+";"+expiresAttrib+";";
+		document.cookie = cookieString;
+	}
+	document.getElementById("out").innerHTML = document.cookie;
+	leer = false;
+	}
+	else
+	{
+		document.cookie+= "\n";
+		myCookies["_user"] = document.getElementById("user").value;
+		myCookies["_uage"] = document.getElementById("age").value.toString();
+		//document.cookie =""; //Leert den Cookie
+		var expiresAttrib = date; //saved für 60000Sekunden
+		for(var key in myCookies)
+		{
+			cookieString = key+"="+myCookies[key]+";"+expiresAttrib+";";
+			document.cookie = cookieString;
+		}
+		document.getElementById("out").innerHTML = document.cookie;
+	}
+}
+
 function saveAndLoadCookies()
 {
 	saveCookies();
