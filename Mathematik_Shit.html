@@ -107,9 +107,8 @@
 		</div>
 		<input type="text" id="user">
 		<input type="text" id="age">
-		<button onclick ="saveCookiesNoDelete()">Formel speichern</button>
-		<a href="Physik.html"><button>Zu Physik</button></a>
-		<p id="out"></p>
+		<a href="Physik_shit.html"><button>Zu Physik</button></a>
+		
 		<p>
 			a, b = Katheten <br>
 			c = Hypotenuse
@@ -117,7 +116,8 @@
 		<br>
 
 	
-	<h3 id="Fläche Dreieck">Fläche eines Dreiecks</h3><br>
+	<div id="Fläche Dreieck">
+	<h3 >Fläche eines Dreiecks</h3><br>
 		<math xmlns = "http://www.w3.org/1998/Math/MathML">
 		   <mrow>
 		         <mi>A</mi> <mo>=</mo>
@@ -130,6 +130,14 @@
 			ha = Höhe an Seite a
 		</p>
 		<br>
+	</div>
+
+	<button onclick ="saveAreaTriangle()">Formel speichern</button>
+	<input type="text" id="user">
+	<button onclick ="loadCookieString()">Formel anzeigen</button>
+	<p id="out"></p>
+	<button onclick ="emptyCookie()">Cookie leeren</button>
+	<br>
 
 
 	<h2 id="Kreis">Kreis</h2>

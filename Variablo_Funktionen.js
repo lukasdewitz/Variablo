@@ -1,4 +1,5 @@
-var myCookies ={};
+var myCookies = {};
+//document.cookie = myCookies;
 
 function saveCookies()
 {
@@ -28,6 +29,36 @@ function loadCookies()
 	document.getElementById("age").value = myCookies["_uage"];
 }
 
+
+function saveAreaTriangle()
+{
+	myCookies += document.getElementById("Fläche Dreieck").innerHTML + "<br>";
+	document.cookie = myCookies;
+	//console.log(myCookies);
+	console.log(document.cookie.toString());
+}
+
+function loadCookieString()
+{
+	//document.getElementById("age").value = document.cookie;
+	//document.getElementById("out").innerHTML = myCookies;
+	document.getElementById("out").innerHTML = myCookies;
+}
+
+function emptyCookie()
+{
+	myCookies = {};
+	document.cookie = "theme=twenty; max-age=0; path=/; domain=myhome.me"
+	alert("Cookie wurde geleert!");
+}
+
+function noCookie()
+{
+	if(myCookies.isEmpty())
+		return true;
+	else
+		return false;
+}
 
 
 
