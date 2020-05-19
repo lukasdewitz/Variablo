@@ -6,7 +6,7 @@ body
 h1
 {
 	text-align: center; 
-	font-size: 12pt; 
+	font-size: 14pt; 
 	font-family: Arial;
 	border: 1px;
 	border-color: none;
@@ -14,7 +14,7 @@ h1
 	padding: 3px; 
 	letter-spacing: 1px; 
 	width: auto;
-	background-color: #FCFBF1;
+
 }
 h2
 {
@@ -34,24 +34,24 @@ h3
 h4
 {
 	text-align: justify;
-	font-size: 14px;
+	font-size: 12px;
 	font-family: Arial;
 	font-weight: 200; 
 	margin: 30px;
 }
-.kopfzeile_button
+h5
 {
+	text-align: left;
+	font-size: 14px;
 	font-family: Arial;
-	float: left;
-	color: #800000;
-	width: auto;
-	max-width: 21%;
-	min-width: 15%;
-	float: left;
-	margin:auto;
-	position: auto;
-	padding-left: 20px;
+	font-weight: bold; 
 }
+.searchString
+{
+	position: fixed;
+	right: 9px;
+	top: 5px;
+}	
 .flexbox
 {
 	display: flex;
@@ -75,85 +75,85 @@ h4
 }
 .containerhello-1
 {
+	display: flex;
 	background-color: #F9F7E2;
 	
 }
-.containervz
+.supercontainer
 {
 	display: flex;
-	flex-direction: column;
-	align-content: space-between;
-	justify-content: flex-start;
-	align-items: left;
-	margin: auto;
+	flex-direction: row;
+	align-content: space-around;
+	align-items: flex-start;
 }
-.containervz-1
-{
-	background-color: #E9F3D4;
-}
-.containerforme1
+.subcontainer
 {
 	display: flex;
+	flex: 1;
 	flex-direction: column;
-	align-content: space-between;
-	justify-content: center;
-	align-items: center;
-}
-.containerformel-1
-{
+	align-content: space-around;
 	background-color: #E9F3D4;
 }
-.headline 
+.topnav
 {
-	font-family: Arial;
-	background-color: #C8E9BF;
-	height: 100px;
-	width: 100%;
-	top: 10px;
+	overflow: hidden;
+	background-color: #E9F3D4;
 }
-.dropdown
+.topnav a /* Style the links inside the navigation bar */
 {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 15px;
+}
+.dropdown /* The container <div> - needed to position the dropdown content */
+{
+	float: left;
+	overflow: hidden;
 	position: relative;
-	display: inline-block;
 }
-.dropdown-content
+.dropdown .dropbtn
+{
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: black;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+.topnav a:hover, .dropdown:hover .dropbtn 
+{
+	background-color: #FCFBF1;
+}
+.dropdown-content /* Dropdown Content (Hidden by Default) */
 {
 	display: none;
 	position: absolute;
-	background-color: #800000;
+	background-color: #F2F2E9;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	padding: 12px 16px;
 	z-index: 1;
-}
-.dropbtn 
-{
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
 }
 .dropdown-content a 
 {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
 }
-
-fieldset
+.dropdown-content a:hover 
 {
-	border: 2px solid black;
-	border-radius: 3px;
-	padding: 15px;
+	background-color: #E3F9D6;
 }
-legend
+.dropdown:hover .dropdown-content 
 {
-	border: 2px solid black;
-	border-radius: 8px;
-	padding: 5px;
+	display: block;
 }
 a:hover
 {
@@ -164,23 +164,6 @@ a
 	color: #192B14;
 	text-decoration: none;
 }
-#cutoff
-{
-	margin:auto; 
-	max-width: 75%;
-}
-#variablo_kopfzeile
-{
-	float: left;
-	color: #800000;
-	width: auto;
-	max-width: 21%;
-	min-width: 15%;
-	float: left;
-	margin: auto;
-	position: auto;
-	padding-left: 20px;
-}	
 #searchString
 {
 	font-family: Arial;
@@ -207,3 +190,38 @@ a
 	padding-left: 20px;
 	margin-top: 5%;
 }
+/*#cutoff
+{
+	margin:auto; 
+	max-width: 75%;
+}
+#variablo_kopfzeile
+{
+	float: left;
+	color: #800000;
+	width: auto;
+	max-width: 21%;
+	min-width: 15%;
+	float: left;
+	margin: auto;
+	position: auto;
+	padding-left: 20px;
+}
+fieldset
+{
+	border: 2px solid black;
+	border-radius: 3px;
+	padding: 15px;
+}
+legend
+{
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+
+
+
+*/
+
