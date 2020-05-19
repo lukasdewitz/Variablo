@@ -1,62 +1,34 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" >
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="Variablo_Design.css">
+	
 	<script language="javascript" type="text/javascript" src="Variablo_Funktionen.js"></script>
+	<!--<script language="javascript" type="text/javascript" src="jQuery.js"></script>-->
 	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	<title>Mathematik</title>
+	
 </head>
 
 <body>
-	
-	<div class = "headline">
-		<div class="kopfzeile_button" style="left: 0%">
-		<!--	<img src = "logo_2.jpg"	style="height:100px; top:0px;"> -->
-	</div>
-	<br>
-		<div class="kopfzeile_button" style="left: 25%">
-				<a href= "Startseite.html">
-					<h1>
-						<span>Startseite</span>
-					</h1>
-				</a>
-		</div>
-		<div class="kopfzeile_button" style="left: 40%">
-				<a href= "Chemie.html">
-					<h1>
-						<span>Chemie</span>
-					</h1>
-				</a>
-		</div>
-			<div class="kopfzeile_button" style="left: 50%">
-			<a href= "Mathematik.html">
-				<h1>
-					<span>Mathematik</span>
-				</h1>
-			</a>
-		</div>
-		<div class="kopfzeile_button" style="left: 60%">
-			<a href= "Physik.html">
-				<h1>
-					<span>Physik</span>
-				</h1>
-			</a>
-		</div>
-		<div class="kopfzeile_button" style="left: 70%">
-			<a href= "IndividuelleFormelsammlung.html">
-				<h1>
-					<span>Individuelle Formelsammlung</span>
-				</h1>
-			</a>
-		</div>
-		<div class="kopfzeile_button" style="left: 80%">
-			<input type="text" name="stichwort" list="stichwort" id="searchString"> 
+
+	<div class = "topnav">
+		<a href = "Startseite.html">Startseite</a>
+		<a href = "Individuelle_Formelsammlung.html">Individuelle Formelsammlung</a>
+		<a href = "Chemie.html">Chemie</a>
+		<a href = "Mathematik.html">Mathematik</a>
+		<a href = "Physik.html">Physik</a>
+		
+			<input type = "text" name = "stichwort" list = "stichwort" class = "searchString" "> 
 				<datalist id = "stichwort">
 					<option value = "Ohm´sches Gesetz"/>
 					<option value = "Satz von Pythagoras"/>
@@ -67,95 +39,119 @@
 					<option value = "Umfang Kreis"/>
 				</datalist>
 			</input>
-			<a id="suchlink" href="javascript: search();">Suchen</a> 
-		</div>
-	</div>
+	<!--		<a id="suchlink" href="javascript: search();">Suchen</a> -->
+	</div>  
+
 			<br> <br> <br> <br>
 				<h1>Mathematik</h1>
 			<br> <br>
 
 	
-	<div class = "containervz">
-		<div class = "flexbox containervz-1">
+	<div class = "supercontainer">
+	<div style = "flex-grow: 1">
+	
+		<div class = "flexbox subcontainer"> 
+		
+		<br>
 			<h1 style = "background-color:#E9F3D4" >Kapitelverzeichnis</h1>
 			<h4>
-				<li>Satz des Pythagoras</li>
-				<li>Vektorrechnung</li>
+			<ul>
+			<h5>Chemie</h5>
+				<li>Summenformel</li>
+				<li>Strukturformel</li>
+			<br>
+			<h5>Mathematik</h5>
+				<li>Kreis</li>
+					<ul>
+						<li>Fläche eines Kreises</li>
+						<li>Umfang eines Kreises</li>
+					</ul>
+					<br>
+				<li>Dreieck</li>
+					<ul>
+						<li>Satz von Pythagoras</li>
+						<li>Fläche eines Dreiecks</li>
+					</ul>
+					<br>
+			<h5>Physik</h5>
+				<li>Allgemeine Relativitätstheorie</li>
+				<li>Ohm´sches Gesetz</li>
+			<br>
+			</ul>
 			</h4>
 		</div>	
-	</div>
-    
+		</div>
+	<div style="flex-grow: 9">	
+	<div class = "flexbox subcontainer">
+		
+			<br>
+		<h1 id = "Dreieck">Dreieck</h1>
+		<h3 id = "Satz von Pythagoras">Satz von Pythagoras</h3><br>
+			<math xmlns = "http://www.w3.org/1998/Math/MathML">
+			   <mrow>
+				  <mrow>
+					 <msup> <mi>a</mi> <mn>2</mn> </msup> <mo>+</mo>
+					 <mrow>
+						<msup> <mi>b</mi> <mn>2</mn> </msup> <mo></mo>
+					 </mrow>
+				  </mrow>
+				  
+				  <mo>=</mo>
+				  <msup> <mi>c</mi> <mn>2</mn> </msup> <mo></mo>
+			   </mrow>
+			</math>	<br> <br>
+			<p>
+				a, b = Katheten <br>
+				c = Hypotenuse
+			</p>
+			<br>
 
-    <div class = "containerformel">
-		<div class = "flexbox containerformel-1">
-	<h2 id = "Dreieck">Dreieck</h2>
-	<h3 id = "Satz von Pythagoras">Satz von Pythagoras</h3><br>
-		<math xmlns = "http://www.w3.org/1998/Math/MathML">
-		   <mrow>
-		      <mrow>
-		         <msup> <mi>a</mi> <mn>2</mn> </msup> <mo>+</mo>
-		         <mrow>
-		         	<msup> <mi>b</mi> <mn>2</mn> </msup> <mo></mo>
-		         </mrow>
-		      </mrow>
-		      
-		      <mo>=</mo>
-		      <msup> <mi>c</mi> <mn>2</mn> </msup> <mo></mo>
-		   </mrow>
-		</math>	<br> <br>
-		<p>
-			a, b = Katheten <br>
-			c = Hypotenuse
-		</p>
-		<br>
-
-	
-	<h3 id="Fläche Dreieck">Fläche eines Dreiecks</h3><br>
-		<math xmlns = "http://www.w3.org/1998/Math/MathML">
-		   <mrow>
-		         <mi>A</mi> <mo>=</mo>
-		         <mi>a</mi> <mo>*</mo> <mi>h</mi> <msub><mi>a</mi></msub>
-		   </mrow>
-		</math>	<br> <br>
-		<p>
-			A = Fläche <br>
-			a = Seite <br>
-			ha = Höhe an Seite a
-		</p>
-		<br>
-
-
-	<h2 id="Kreis">Kreis</h2>
-	<h3 id="Fläche Kreis">Fläche eines Kreises</h3><br>
-		<math xmlns = "http://www.w3.org/1998/Math/MathML">
-		   <mrow>
-		        <mi>A</mi> <mo>=</mo>
-		      	<msup> <mi>r</mi> <mn>2</mn> </msup> <mi>π</mi>
-		   </mrow>
-		</math>	<br> <br>
-		<p>
-			A = Fläche <br>
-			r = Radius
-		</p>
-		<br>
-
-	<h3 id="Umfang Kreis">Umfang eines Kreises</h3><br>
-		<math xmlns = "http://www.w3.org/1998/Math/MathML">
-		   <mrow>
-		        <mi>U</mi> <mo>=</mo>
-		      	<mn>2</mn> <mo>*</mo> <mi>π</mi> <mo>*</mo> <mi>r</mi>
-		   </mrow>
-		</math>	<br> <br>
-		<p>
-			U = Umfang <br>
-			r = Radius
-		</p>
-		<br>
+		
+		<h3 id="Fläche Dreieck">Fläche eines Dreiecks</h3><br>
+			<math xmlns = "http://www.w3.org/1998/Math/MathML">
+			   <mrow>
+					 <mi>A</mi> <mo>=</mo>
+					 <mi>a</mi> <mo>*</mo> <mi>h</mi> <msub><mi>a</mi></msub>
+			   </mrow>
+			</math>	<br> <br>
+			<p>
+				A = Fläche <br>
+				a = Seite <br>
+				ha = Höhe an Seite a
+			</p>
+			<br>
 
 
-	</div>
-	
-				
+		<h1 id = "Kreis">Kreis</h1>
+		<h3 id = "Fläche Kreis">Fläche eines Kreises</h3><br>
+			<math xmlns = "http://www.w3.org/1998/Math/MathML">
+			   <mrow>
+					<mi>A</mi> <mo>=</mo>
+					<msup> <mi>r</mi> <mn>2</mn> </msup> <mi>π</mi>
+			   </mrow>
+			</math>	<br> <br>
+			<p>
+				A = Fläche <br>
+				r = Radius
+			</p>
+			<br>
+
+		<h3 id="Umfang Kreis">Umfang eines Kreises</h3><br>
+			<math xmlns = "http://www.w3.org/1998/Math/MathML">
+			   <mrow>
+					<mi>U</mi> <mo>=</mo>
+					<mn>2</mn> <mo>*</mo> <mi>π</mi> <mo>*</mo> <mi>r</mi>
+			   </mrow>
+			</math>	<br> <br>
+			<p>
+				U = Umfang <br>
+				r = Radius
+			</p>
+			<br>
+
+
+	</div> 
+	</div>	
 
 </body>	
 
